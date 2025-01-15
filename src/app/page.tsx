@@ -1,4 +1,13 @@
-import { redirect } from 'next/navigation';
-export default function Home({}) {
-  redirect('/admin/default');
+import { Navbar } from "components/homepageLayout/navbar";
+import { HeroSection } from "./../components/homepageLayout/sections/hero";
+
+
+
+export default function Home() {
+  return (
+    <>
+    <Navbar />
+    <HeroSection />
+    </>
+  )
 }
