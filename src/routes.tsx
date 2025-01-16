@@ -43,7 +43,7 @@ const adminRoutes = [
   {
     name: 'Customers',
     layout: '/admin',
-    path: 'customers',
+    path: 'users',
     icon: <MdPeople className="h-6 w-6" />,
   },
   {

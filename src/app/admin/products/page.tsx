@@ -1,43 +1,19 @@
 'use client';
-import Banner from 'components/admin/profile/Banner';
-import General from 'components/admin/profile/General';
-import Notification from 'components/admin/profile/Notification';
-import Project from 'components/admin/profile/Project';
-import Storage from 'components/admin/profile/Storage';
-import Upload from 'components/admin/profile/Upload';
 
-const ProfileOverview = () => {
+import ProductTable from "components/admin/products/product-table"
+
+const Products = () => {
   return (
-    <div className="flex w-full flex-col gap-5 lg:gap-5">
-      <div className="w-ful mt-3 flex h-fit flex-col gap-5 lg:grid lg:grid-cols-12">
-        <div className="col-span-4 lg:!mb-0">
-          <Banner />
-        </div>
+    <div className="mt-5">
+    <div className="flex justify-end mb-4">
+    <button className="rounded-lg bg-brand-500 px-5 py-3 text-base font-medium text-white transition duration-200 hover:bg-brand-600 active:bg-brand-700 dark:bg-brand-400 dark:text-white dark:hover:bg-brand-300 dark:active:bg-brand-200">
+               Add Products
+       </button>
+    </div>
 
-        <div className="col-span-3 lg:!mb-0">
-          <Storage />
-        </div>
-
-        <div className="z-0 col-span-5 lg:!mb-0">
-          <Upload />
-        </div>
-      </div>
-      {/* all project & ... */}
-
-      <div className="mb-4 grid h-full grid-cols-1 gap-5 lg:!grid-cols-12">
-        <div className="col-span-5 lg:col-span-6 lg:mb-0 3xl:col-span-4">
-          <Project />
-        </div>
-        <div className="col-span-5 lg:col-span-6 lg:mb-0 3xl:col-span-5">
-          <General />
-        </div>
-
-        <div className="col-span-5 lg:col-span-12 lg:mb-0 3xl:!col-span-3">
-          <Notification />
-        </div>
-      </div>
+    <ProductTable />
     </div>
   );
 };
 
-export default ProfileOverview;
+export default Products;

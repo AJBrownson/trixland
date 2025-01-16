@@ -10,12 +10,7 @@ const Dashboard = () => {
   return (
     <>
       {/* Greeting section */}
-      <section>
-        <h1>Welcome {username}!</h1>
-        <p>Here is your dashboard overview for today</p>
-      </section>
-
-      <section>
+      <section className="mt-5">
         <span>
           <VirtualCard />
 

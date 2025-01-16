@@ -1,11 +1,13 @@
 'use client';
-import BuyFollowers from 'components/admin/dashboard/BuyFollowers';
 
 
-export default function Followers() {
+export default function Deposits() {
   return (
     <>
-    <BuyFollowers />
+    <div className="mt-5">
+    <h1 className="text-xl font-semibold dark:text-white">Deposits Appear Here</h1>
+    <p className='text-base mt-6 mb-3 dark:text-white'>You have no deposits here</p>
+    </div>
     </>
   );
 };
